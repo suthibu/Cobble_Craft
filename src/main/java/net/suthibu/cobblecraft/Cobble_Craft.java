@@ -1,5 +1,7 @@
 package net.suthibu.cobblecraft;
 
+import net.minecraft.world.item.CreativeModeTabs;
+import net.suthibu.cobblecraft.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -34,6 +36,8 @@ public class Cobble_Craft {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModItems.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
@@ -46,7 +50,9 @@ public class Cobble_Craft {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.COBBLESTONE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraf:item/generated",
+  "textures": {
+    "layer0": "cobblecraft:item/cobblestoneboard"
+  }
+}
