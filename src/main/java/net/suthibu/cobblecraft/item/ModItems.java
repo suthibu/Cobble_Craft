@@ -9,7 +9,7 @@ import net.suthibu.cobblecraft.Cobble_Craft;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Cobble_Craft.MOD_ID);
 
-    public static final DeferredItem<Item> COBBLESTONE = ITEMS.register("cobblestone",
+    public static final DeferredItem<Item> COBBLESTONEBOARD = ITEMS.register("cobblestoneboard",
             () -> new Item(new Item.Properties()));
 
 
