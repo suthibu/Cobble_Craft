@@ -1,6 +1,7 @@
 package net.suthibu.cobblecraft;
 
 import net.minecraft.world.item.CreativeModeTabs;
+import net.suthibu.cobblecraft.block.ModBlocks;
 import net.suthibu.cobblecraft.item.ModItems;
 import org.slf4j.Logger;
 
@@ -37,6 +38,7 @@ public class Cobble_Craft {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -52,6 +54,10 @@ public class Cobble_Craft {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.COBBLESTONEBOARD);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS);{
+            event.accept(ModBlocks.RAINBOWCOBBLESTONE);
         }
     }
 
