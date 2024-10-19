@@ -1,5 +1,14 @@
 {
-  "item.cobblecraft.cobblestoneboard": "cobble stone board",
+  "creativetab.cobblecraft.cobblecraft_creative_tab": "§dCobble Craft§r",
 
-  "block.cobblecraft.rainbowcobblestone": "§d Rainbow §b Cobble §a Stone §r"
+  "item.cobblecraft.cobblestoneboard": "cobble stone board",
+  "item.cobblecraft.rainbowboard": "§dRainbow §aBoard §r",
+
+  "block.cobblecraft.onemultiplier_cobblestone": "9^1 cobble stone",
+  "block.cobblecraft.twomultiplier_cobblestone": "9^2 cobble stone",
+  "block.cobblecraft.threemultiplier_cobblestone": "9^3 cobble stone",
+  "block.cobblecraft.rainbowcobblestone": "§dRainbow §bCobble §aStone §r",
+  "block.cobblecraft.testgif": "Test Gif"
+
+
 }

@@ -2,6 +2,7 @@ package net.suthibu.cobblecraft;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import net.suthibu.cobblecraft.block.ModBlocks;
+import net.suthibu.cobblecraft.item.ModCreativeModeTabs;
 import net.suthibu.cobblecraft.item.ModItems;
 import org.slf4j.Logger;
 
@@ -37,6 +38,8 @@ public class Cobble_Craft {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -51,15 +54,10 @@ public class Cobble_Craft {
     }
 
     // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.COBBLESTONEBOARD);
-        }
+    private void addCreative(BuildCreativeModeTabContentsEvent event){
 
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS);{
-            event.accept(ModBlocks.RAINBOWCOBBLESTONE);
-        }
     }
+
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent

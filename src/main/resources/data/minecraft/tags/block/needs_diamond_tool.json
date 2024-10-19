@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "cobblecraft:rainbowcobblestone",
+    "cobblecraft:onemultiplier_cobblestone",
+    "cobblecraft:twomultiplier_cobblestone",
+    "cobblecraft:threemultiplier_cobblestone"
+  ]
+}

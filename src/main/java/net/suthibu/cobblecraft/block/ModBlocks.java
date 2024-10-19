@@ -21,7 +21,20 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> RAINBOWCOBBLESTONE = registerBlock("rainbowcobblestone",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    .strength(100f, 100000f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> ONEMULTIPLIER_COBBLESTONE = registerBlock("onemultiplier_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f, 100000f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> TWOMULTIPLIER_COBBLESTONE = registerBlock("twomultiplier_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f, 100000f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> THREEMULTIPLIER_COBBLESTONE = registerBlock("threemultiplier_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f, 100000f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> TESTGIF = registerBlock("testgif",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f, 100000f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
 
 
 
