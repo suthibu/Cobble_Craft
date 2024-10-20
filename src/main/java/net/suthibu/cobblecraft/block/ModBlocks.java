@@ -37,7 +37,12 @@ public class ModBlocks {
     public static final DeferredBlock<Block> THINKING_FACE = registerBlock("thinking_face",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.5f, 100000f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-
+    public static final DeferredBlock<Block> ROTARE_THINKING_FACE = registerBlock("rotare_thinking_face",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f, 100000f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> VERTICAL = registerBlock("vertical",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f, 100000f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
 
 

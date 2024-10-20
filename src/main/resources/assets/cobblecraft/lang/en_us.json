@@ -9,7 +9,9 @@
   "block.cobblecraft.threemultiplier_cobblestone": "9^3 cobble stone",
   "block.cobblecraft.rainbowcobblestone": "§dRainbow §bCobble §aStone §r",
   "block.cobblecraft.testgif": "Test Gif",
-  "block.cobblecraft.thinking_face": "Thinking Face"
+  "block.cobblecraft.thinking_face": "Thinking Face",
+  "block.cobblecraft.rotare_thinking_face": "Rotare Thinking Face",
+  "block.cobblecraft.vertical": "Vertical"
 
 
 }

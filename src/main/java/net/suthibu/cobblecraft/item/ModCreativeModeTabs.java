@@ -27,6 +27,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RAINBOWCOBBLESTONE);
                         output.accept(ModBlocks.TESTGIF);
                         output.accept(ModBlocks.THINKING_FACE);
+                        output.accept(ModBlocks.ROTARE_THINKING_FACE);
+                        output.accept(ModBlocks.VERTICAL);
                     }).build());
 
     public static void register(IEventBus eventBus) {

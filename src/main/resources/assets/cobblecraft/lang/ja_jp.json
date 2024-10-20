@@ -1,0 +1,17 @@
+{
+  "creativetab.cobblecraft.cobblecraft_creative_tab": "§dCobble Craft§r",
+
+  "item.cobblecraft.cobblestoneboard": "丸石の板",
+  "item.cobblecraft.rainbowboard": "§dキラキラしてる §a板 §r",
+
+  "block.cobblecraft.onemultiplier_cobblestone": "9^1 丸石",
+  "block.cobblecraft.twomultiplier_cobblestone": "9^2 丸石",
+  "block.cobblecraft.threemultiplier_cobblestone": "9^3 丸石",
+  "block.cobblecraft.rainbowcobblestone": "§dキラキラしている §b丸§a石 §r",
+  "block.cobblecraft.testgif": "Test Gif",
+  "block.cobblecraft.thinking_face": "考える顔",
+  "block.cobblecraft.rotare_thinking_face": "回る考える顔",
+  "block.cobblecraft.vertical": "縦長"
+
+
+}
