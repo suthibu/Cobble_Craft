@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.THREEMULTIPLIER_COBBLESTONE);
                         output.accept(ModBlocks.RAINBOWCOBBLESTONE);
                         output.accept(ModBlocks.TESTGIF);
+                        output.accept(ModBlocks.THINKING_FACE);
                     }).build());
 
     public static void register(IEventBus eventBus) {

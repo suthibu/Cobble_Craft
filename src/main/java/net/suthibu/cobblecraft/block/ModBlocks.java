@@ -34,6 +34,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> TESTGIF = registerBlock("testgif",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.5f, 100000f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> THINKING_FACE = registerBlock("thinking_face",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f, 100000f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
 
 
