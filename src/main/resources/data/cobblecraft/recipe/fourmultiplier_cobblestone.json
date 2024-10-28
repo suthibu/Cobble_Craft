@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "mics",
+  "key":{
+    "#": {
+      "item": "cobblecraft:threemultiplier_cobblestone"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cobblecraft:fourmultiplier_cobblestone"
+  }
+  }

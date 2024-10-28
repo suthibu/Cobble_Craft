@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "redstone=false": {
       "model": "cobblecraft:block/rotare_thinking_face"
+    },
+    "redstone=true":  {
+      "model": "cobblecraft:block/thinking_face"
     }
   }
 }

@@ -9,6 +9,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.suthibu.cobblecraft.Cobble_Craft;
+import net.suthibu.cobblecraft.block.custom.Rotare_Thinking_Face;
 import net.suthibu.cobblecraft.item.ModItems;
 
 import java.util.function.Supplier;
@@ -31,15 +32,21 @@ public class ModBlocks {
     public static final DeferredBlock<Block> THREEMULTIPLIER_COBBLESTONE = registerBlock("threemultiplier_cobblestone",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.5f, 100000f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final DeferredBlock<Block> TESTGIF = registerBlock("testgif",
+    public static final DeferredBlock<Block> FOURMULTIPLIER_COBBLESTONE = registerBlock("fourmultiplier_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f, 100000f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> FIVEMULTIPLIER_COBBLESTONE = registerBlock("fivemultiplier_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f, 100000f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block>SIXMULTIPLIER_COBBLESTONE = registerBlock("sixmultiplier_cobblestone",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.5f, 100000f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> THINKING_FACE = registerBlock("thinking_face",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.5f, 100000f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final DeferredBlock<Block> ROTARE_THINKING_FACE = registerBlock("rotare_thinking_face",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1.5f, 100000f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+            () -> new Rotare_Thinking_Face(BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(Rotare_Thinking_Face.REDSTONE) ? 15 : 0)));
     public static final DeferredBlock<Block> VERTICAL = registerBlock("vertical",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.5f, 100000f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
@@ -61,4 +68,7 @@ public class ModBlocks {
     public static void register(IEventBus eventBus){
         BLOCKS.register(eventBus);
     }
+
+
 }
+

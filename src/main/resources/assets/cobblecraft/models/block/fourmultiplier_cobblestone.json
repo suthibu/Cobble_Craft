@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "cobblecraft:block/testgif"
+    "all": "cobblecraft:block/fourmultiplier_cobblestone"
   }
 }
